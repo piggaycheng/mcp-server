@@ -55,31 +55,29 @@ async def get_weather_forecast(location: Optional[str]) -> WeatherResponse:
     return data
 
 
-@mcp.tool("Sum", description="Sum two numbers")
-async def sum(a: int, b: int) -> int:
-    """
-    Sum two numbers.
+# @mcp.tool("Sum", description="Sum two numbers")
+# async def sum(a: int, b: int) -> int:
+#     """
+#     Sum two numbers.
 
-    Args:
-        a: First number.
-        b: Second number.
-    Returns:
-        The sum of a and b.
-    """
-    return a + b
+#     Args:
+#         a: First number.
+#         b: Second number.
+#     Returns:
+#         The sum of a and b.
+#     """
+#     return a + b
 
 
-@mcp.tool("Subtract", description="Subtract two numbers")
-async def subtract(a: int, b: int) -> int:
-    """
-    Subtract two numbers.
+# @mcp.tool("Subtract", description="Subtract two numbers")
+# async def subtract(a: int, b: int) -> int:
+#     """
+#     Subtract two numbers.
 
-    Args:
-        a: First number.
-        b: Second number.
-    Returns:
-        The result of subtracting b from a.
-    """
-    return a - b
-
-print(get_weather_forecast.__doc__)
+#     Args:
+#         a: First number.
+#         b: Second number.
+#     Returns:
+#         The result of subtracting b from a.
+#     """
+#     return a - b
